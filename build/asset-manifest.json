@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "./static/css/main.b7547beb.css",
+    "main.js": "./static/js/main.d895ea2b.js",
+    "static/media/blueprint-icons-20.eot?": "./static/media/blueprint-icons-20.ee0fc08bd67fff6852da.eot",
+    "static/media/blueprint-icons-20.ttf?": "./static/media/blueprint-icons-20.f9f9b928d6d25a60dafb.ttf",
+    "static/media/blueprint-icons-16.eot?": "./static/media/blueprint-icons-16.9023c3cd2b7e0776b6f3.eot",
+    "static/media/blueprint-icons-16.ttf?": "./static/media/blueprint-icons-16.5f8bf09a623bf53ce4cd.ttf",
+    "static/media/blueprint-icons-20.woff?": "./static/media/blueprint-icons-20.e167c2e6510cc5061171.woff",
+    "static/media/blueprint-icons-16.woff?": "./static/media/blueprint-icons-16.84a2c39967c3d1639195.woff",
+    "static/media/blueprint-icons-20.woff2?": "./static/media/blueprint-icons-20.eb93ba08999da99ce3b3.woff2",
+    "static/media/blueprint-icons-16.woff2?": "./static/media/blueprint-icons-16.13ad4ae93d92e4da0e3c.woff2",
+    "static/media/uzb_flag.png": "./static/media/uzb_flag.5aa3dc7b5c642608a007.png",
+    "static/media/rus_flag.png": "./static/media/rus_flag.64f415f760016e5be52c.png",
+    "index.html": "./index.html",
+    "main.b7547beb.css.map": "./static/css/main.b7547beb.css.map",
+    "main.d895ea2b.js.map": "./static/js/main.d895ea2b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b7547beb.css",
+    "static/js/main.d895ea2b.js"
+  ]
+}

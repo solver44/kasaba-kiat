@@ -1,0 +1,71 @@
+// @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+// * {
+//  margin: 0;
+//  padding: 0;
+//  box-sizing: border-box;
+//  font-family: "Poppins", sans-serif
+// }
+@import './variables.scss';
+.dragn-drop-file {
+ border: 1px dashed $dark-gray1;
+ height: 300px;
+ //  width: 350px;
+ //  border-radius: 5px;
+ font-weight: 400;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+ background-color: white;
+ * {
+  pointer-events: none;
+ }
+}
+
+.dragn-drop-file.active {
+ border: 2px solid #fff
+}
+
+.dragn-drop-file .icon-upload {
+ //  font-size: 30px;
+ //  color: #fff
+}
+
+.dragn-drop-file h6 {
+ font-size: 20px;
+ font-weight: 400;
+ margin: 0;
+}
+
+.dragn-drop-file span {
+ font-size: 14px;
+ font-weight: 400;
+ //  color: #fff;
+ margin: 10px 0 15px 0
+}
+
+.dragn-drop-file button {
+ color: black;
+ font-weight: normal;
+ padding: 20px;
+ pointer-events: all;
+ span {
+  margin: 0;
+ }
+}
+
+.dragn-drop-file img {
+ height: 100%;
+ width: 100%;
+ object-fit: cover;
+ border-radius: 5px
+}
+
+.columns-parametrs {
+ width: 50%;
+}
+
+.file-name {
+ box-shadow: 0 0 0 1px $pt-intent-success; // $pt-divider-black;
+ padding: 10px;
+}

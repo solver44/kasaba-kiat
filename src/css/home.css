@@ -1,0 +1,104 @@
+html {
+  min-height: 100vh;
+  overflow: hidden;
+  width: 100%;
+}
+
+button,
+a {
+  user-select: none;
+}
+
+.home {
+  height: 100%;
+  display: flex;
+}
+.app-content {
+  height: 100%;
+  width: 100%;
+  display: inline-grid;
+  grid-template-rows: [first] 50px;
+}
+.header-title {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 12px 0px 0px 0px;
+  letter-spacing: 2px;
+}
+.header-tag {
+  transform: translate(3px, -7px);
+  letter-spacing: 1px;
+}
+.app-sidebar {
+  font-size: medium;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  flex: none;
+  /* background: white; */
+  color: white;
+  background-color: #0c2546;
+  overflow: hidden;
+  width: 256px;
+  box-shadow: 0 0 0 1px rgb(16 22 26 / 15%), 0 0 0 rgb(16 22 26 / 0%),
+    0 0 0 rgb(16 22 26 / 0%);
+  height: 100%;
+}
+.tree-sidebar {
+  height: 100%;
+  /* background-color: #404955; */
+}
+.sidebar-toggler {
+  cursor: pointer;
+}
+
+.menu-tree {
+  height: 100%;
+  text-align: start;
+}
+
+.app-screen {
+  height: 100%;
+  width: 100%;
+  overflow: overlay;
+  padding: 20px;
+}
+
+:focus:not(:focus-visible) {
+  outline: 0;
+  box-shadow: none;
+}
+
+.d-flex-row {
+  display: flex;
+  gap: 10px;
+}
+
+.d-flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 1050px) {
+  .app-sidebar {
+    width: auto;
+  }
+  .app-sidebar p,
+  .tree-right-icon {
+    display: none;
+  }
+  .sidebar-toggler {
+    display: none;
+  }
+  .header-title {
+    display: none;
+  }
+  .header-title {
+    font-size: 15px;
+    margin: 0;
+  }
+  .bp4-large .bp4-button {
+    padding: 0px 10px;
+  }
+}

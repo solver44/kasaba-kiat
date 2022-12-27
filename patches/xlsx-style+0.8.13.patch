@@ -1,0 +1,50 @@
+diff --git a/node_modules/xlsx-style/.vscode/settings.json b/node_modules/xlsx-style/.vscode/settings.json
+new file mode 100644
+index 0000000..1f2b05c
+--- /dev/null
++++ b/node_modules/xlsx-style/.vscode/settings.json
+@@ -0,0 +1,3 @@
++{
++  "nuxt.isNuxtApp": false
++}
+\ No newline at end of file
+diff --git a/node_modules/xlsx-style/dist/cpexcel.js b/node_modules/xlsx-style/dist/cpexcel.js
+index f821c7a..cbe7cbd 100644
+--- a/node_modules/xlsx-style/dist/cpexcel.js
++++ b/node_modules/xlsx-style/dist/cpexcel.js
+@@ -804,7 +804,7 @@ if (typeof module !== 'undefined' && module.exports) module.exports = cptable;
+   "use strict";
+   if(typeof cptable === "undefined") {
+     if(typeof require !== "undefined"){
+-      var cpt = require('./cpt' + 'able');
++      var cpt = cptable;
+       if (typeof module !== 'undefined' && module.exports) module.exports = factory(cpt);
+       else root.cptable = factory(cpt);
+     } else throw new Error("cptable not found");
+diff --git a/node_modules/xlsx-style/xlsx.js b/node_modules/xlsx-style/xlsx.js
+index 15b58b1..d9c15c3 100644
+--- a/node_modules/xlsx-style/xlsx.js
++++ b/node_modules/xlsx-style/xlsx.js
+@@ -1335,11 +1335,12 @@ var _fs, jszip;
+ if(typeof JSZip !== 'undefined') jszip = JSZip;
+ if (typeof exports !== 'undefined') {
+ 	if (typeof module !== 'undefined' && module.exports) {
+-		if(has_buf && typeof jszip === 'undefined') jszip = require('js'+'zip');
+-		if(typeof jszip === 'undefined') jszip = require('./js'+'zip').JSZip;
++		if(has_buf && typeof jszip === 'undefined') jszip = require('./jszip');
++		if(typeof jszip === 'undefined') jszip = require('./jszip');
+ 		_fs = require('f'+'s');
+ 	}
+ }
++
+ var attregexg=/([\w:]+)=((?:")([^"]*)(?:")|(?:')([^']*)(?:'))/g;
+ var tagregex=/<[^>]*>/g;
+ var nsregex=/<\w*:/, nsregex2 = /<(\/?)\w+:/;
+@@ -11651,6 +11652,7 @@ function write_zip(wb, opts) {
+ 		coreprops: [], extprops: [], custprops: [], strs:[], comments: [], vba: [],
+ 		TODO:[], rels:[], xmlns: "" };
+ 	fix_write_opts(opts = opts || {});
++
+ 	var zip = new jszip();
+ 	var f = "", rId = 0;
+ 

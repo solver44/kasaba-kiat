@@ -1,0 +1,26 @@
+.bp4-toast-message {
+  height: 100%;
+}
+
+/* .dialog-form label.bp4-label .bp4-popover2-target {    
+ margin: 0;
+} */
+
+.bp4-popover2-target {
+  margin-top: auto !important;
+}
+label.bp4-label .bp4-input {
+  /* display: initial; */
+}
+.bp4-button-group {
+  align-items: flex-end;
+}
+.bp4-tag {
+  z-index: 0;
+}
+.drawer-body {
+  overflow: auto;
+}
+.app-toaster {
+  z-index: 1000;
+}

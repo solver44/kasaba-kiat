@@ -1,0 +1,17 @@
+.left-in-out-enter {
+  opacity: 0;
+  width: 0px !important;
+}
+.left-in-out-enter-active {
+  opacity: 1;
+  transition: all 300ms;
+  width: 256px !important;
+}
+.left-in-out-exit {
+  opacity: 1;
+}
+.left-in-out-exit-active {
+  opacity: 0;
+  transition: all 300ms;
+  width: 0px !important;
+}

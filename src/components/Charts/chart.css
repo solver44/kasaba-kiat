@@ -1,0 +1,39 @@
+.App {
+ font-family: sans-serif;
+ text-align: center;
+}
+
+.flex-card {
+ display: flex;
+ justify-content: space-between;
+}
+
+.flex-card>div {
+ /* margin: 10px; */
+ width: 50%;
+}
+
+.flex-chart {
+ display: flex;
+ /* justify-content: space-evenly; */
+ align-items: stretch;
+}
+
+.flex-chart>div {
+ /* border: 1px solid black; */
+ width: 50%;
+}
+
+.highcharts-credits {
+ display: none;
+}
+
+.bp4-card {
+ margin: 10px;
+}
+
+@media screen and (max-width: 1133px) {
+ .flex-chart>div {
+  width: 48%;
+ }
+}

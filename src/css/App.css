@@ -1,0 +1,40 @@
+:root {
+  --global-border-radius: 3px;
+  --panel-bg: white;
+  --text-color: black;
+}
+
+#__next {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+body {
+  background-color: #f5f8fa;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  /* background: linear-gradient(to bottom, #1B2D48, #3C649F, #4779C4); */
+}
+* {
+  box-sizing: border-box;
+}
+
+.app-loader {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.spinner-bg {
+  padding: 25px;
+  background-color: white;
+  border-radius: var(--global-border-radius);
+}

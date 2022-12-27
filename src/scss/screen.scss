@@ -1,0 +1,44 @@
+@import "../scss/variables.scss";
+// !Animtaions
+@import "./animations.scss";
+
+.screen-title {
+  color: $pt-text-color-muted;
+  text-align: start;
+  font-size: 19px !important;
+  //  font-size: $pt-font-size-large;
+}
+.dropdown-button {
+  div {
+    height: 100%;
+  }
+}
+.bp4-dialog {
+  min-width: 80%;
+}
+
+.rel {
+  position: relative;
+}
+
+.abs {
+  position: absolute;
+}
+
+.align-center {
+  align-items: center;
+}
+.g-10 {
+  gap: 10px;
+}
+.h-100 {
+  height: 100%;
+}
+.w-100 {
+  width: 100%;
+}
+
+.left-pos {
+  left: 0;
+  margin-left: 0 !important;
+}

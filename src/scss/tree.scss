@@ -1,0 +1,91 @@
+.selected-row2 {
+  // background-color: #4b5561;
+  background-color: #ffffff20;
+  // color: #2c6eca;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 600;
+  .tree-icon {
+    color: rgba(255, 255, 255, 1);
+  }
+}
+.unselected-row2{
+  // color: #1c2127;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  .tree-icon {
+  //  color: #5c7080;
+  color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.app-tree {
+ height: 100%;
+ text-align: left;
+}
+
+.d-tree-container {
+ list-style: none;
+ padding: 0;
+}
+
+.d-tree-content {
+//  margin-bottom: 15px;
+}
+
+.d-flex {
+ display: flex;
+ justify-content: space-between;
+}
+
+.flex-column {
+ flex-direction: column;
+}
+
+.d-tree-node {
+ cursor: pointer;
+}
+
+.d-tree-head {
+ display: flex;
+ gap: 20px;
+}
+
+.d-tree-head p {
+ margin: 0;
+}
+
+.d-tree-btn {
+ user-select: none;
+ text-align: start;
+ padding: 0.75rem 1.25rem;
+}
+
+.d-tree-btn:hover {
+ background-color: rgba(143, 153, 168, 0.15);
+}
+
+.d-tree-toggler.active {
+ transform: rotate(180deg);
+}
+
+.size-in-enter {
+ opacity: 0;
+ transform: translateY(-10px);
+}
+
+.size-in-enter-active {
+ opacity: 1;
+ transform: translateY(0);
+ transition: opacity 300ms, transform 300ms;
+}
+
+.size-in-exit {
+ opacity: 1;
+ transform: translateY(0px);
+}
+
+.size-in-exit-active {
+ opacity: 0;
+ transform: translateY(-10px);
+ transition: opacity 300ms, transform 300ms;
+}

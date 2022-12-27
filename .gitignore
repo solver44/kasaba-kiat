@@ -1,0 +1,5 @@
+node_modules
+.next
+.vscode
+.netlify
+package-lock.json
