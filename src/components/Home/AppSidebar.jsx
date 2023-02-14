@@ -71,6 +71,66 @@ function treeData() {
           label: translateKey("countries"),
           value: "country",
         },
+        {
+          key: "/dy/coato",
+          icon: "document",
+          label: translateKey("coato"),
+          value: "coato",
+        },
+        {
+          key: "/dy/okonx",
+          icon: "document",
+          label: translateKey("okonx"),
+          value: "okonx",
+        },
+        {
+          key: "/dy/opf",
+          icon: "document",
+          label: translateKey("opf"),
+          value: "opf",
+        },
+        {
+          key: "/dy/form_of_ownership",
+          icon: "document",
+          label: translateKey("form_of_ownership"),
+          value: "form_of_ownership",
+        },
+        {
+          key: "/dy/networks",
+          icon: "document",
+          label: translateKey("networks"),
+          value: "networks",
+        },
+        {
+          key: "/dy/type_of_organization",
+          icon: "document",
+          label: translateKey("type_of_organization"),
+          value: "type_of_organization",
+        },
+        {
+          key: "/dy/soogu",
+          icon: "document",
+          label: translateKey("soogu"),
+          value: "soogu",
+        },
+        {
+          key: "/dy/engine_group",
+          icon: "document",
+          label: translateKey("engine_group"),
+          value: "engine_group",
+        },
+        {
+          key: "/dy/contract_type",
+          icon: "document",
+          label: translateKey("contract_type"),
+          value: "contract_type",
+        },
+        {
+          key: "/dy/type_of_documents",
+          icon: "document",
+          label: translateKey("type_of_documents"),
+          value: "type_of_documents",
+        },
       ],
     },
     {
@@ -109,6 +169,7 @@ function treeData() {
           label: translateKey("setting_translations"),
           value: "translate",
         },
+        
       ],
     },
   ];
@@ -139,23 +200,6 @@ function AppSidebar() {
             </Navbar.Heading>
             <div className="tree-sidebar">
               <Tree onClicked={onClickedTreeNode} data={treeData()} />
-            </div>
-
-            <div
-              className="sidebar-toggler d-flex d-tree-btn"
-              onClick={() => {}}
-            >
-              <div className="col d-tree-head">
-                <Icon className="tree-icon" />
-                <p></p>
-              </div>
-              <div className={`d-inline d-tree-toggler`}>
-                <Icon
-                  className="tree-right-icon"
-                  icon={"chevron-left"}
-                  iconSize={20}
-                />
-              </div>
             </div>
           </div>
         </CSSTransition>
